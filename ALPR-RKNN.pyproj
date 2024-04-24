@@ -16,50 +16,39 @@
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
+
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
   </PropertyGroup>
+
   <ItemGroup>
     <Content Include="ALPR.py" />
     <Content Include="explore.html" />
     <Content Include="options.py" />
     <Content Include="ALPR_adapter.py" />
-    <Content Include="requirements.orangepi.txt" />
     <Content Include="utils\tools.py" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="install.sh" />
     <Content Include="install.bat" />
     <Content Include="package.bat" />
     <Content Include="package.sh" />
   </ItemGroup>
+
   <ItemGroup>
+    <Content Include="requirements.txt" />
     <Content Include="modulesettings.json" />
-    <Content Include="modulesettings.linux.json">
-      <DependentUpon>modulesettings.json</DependentUpon>
-    </Content>
-    <Content Include="modulesettings.macos.json">
-      <DependentUpon>modulesettings.json</DependentUpon>
-    </Content>
-    <Content Include="modulesettings.raspberrypi.json">
-      <DependentUpon>modulesettings.json</DependentUpon>
-    </Content>
-    <Content Include="modulesettings.orangepi.json">
-      <DependentUpon>modulesettings.json</DependentUpon>
-    </Content>
-    <Content Include="modulesettings.windows.json">
-      <DependentUpon>modulesettings.json</DependentUpon>
-    </Content>
-    <Content Include="modulesettings.jetson.json">
-      <DependentUpon>modulesettings.json</DependentUpon>
-    </Content>
   </ItemGroup>
+
   <ItemGroup>
     <Folder Include="paddleocr\" />
     <Folder Include="paddleocr\en_PP-OCRv3_det_infer\" />
     <Folder Include="paddleocr\en_PP-OCRv3_rec_infer\" />
     <Folder Include="utils\" />
   </ItemGroup>
+  
   <ItemGroup>
     <Interpreter Include="bin\windows\python37\venv\">
       <Id>venv</Id>
