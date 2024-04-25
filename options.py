@@ -1,4 +1,5 @@
-from module_options import ModuleOptions
+# CodeProject.AI module options helper
+from codeproject_ai_sdk import ModuleOptions
 
 class Options:
 
