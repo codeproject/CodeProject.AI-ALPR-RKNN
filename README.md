@@ -19,8 +19,8 @@ This is an Automatic License Plate Recognition (ALPR) module for [CodeProject.AI
            - ... etc
          - tests
       - CodeProject.AI-Modules
-         - ALPR-RKNN
-         (this repo)
+         - ALPR-RKNN (this repo)
+         ...
     ```
 
 3. **If you have NOT run dev setup on the server**

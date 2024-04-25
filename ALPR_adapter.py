@@ -1,20 +1,17 @@
 # Import our general libraries
-import sys
 import time
 
-# Import the CodeProject.AI SDK. This will add to the PATH  for future imports
-sys.path.append("../../SDK/Python")
-from request_data import RequestData
-from module_runner import ModuleRunner
-from module_options import ModuleOptions
-from common import JSON
+# Import CodeProject.AI SDK
+from codeproject_ai_sdk import RequestData, ModuleRunner, JSON
 
-from options import Options
-
+# import modules we've installed as for this module to work
 from PIL import Image
 
 # Import the method of the module we're wrapping
 from ALPR import init_detect_platenumber, detect_platenumber
+
+# Import our helpers
+from options import Options
 
 
 class ALPR_adapter(ModuleRunner):
