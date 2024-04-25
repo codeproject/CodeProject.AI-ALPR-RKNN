@@ -6,4 +6,6 @@ https://github.com/MikeLud/CodeProject.AI-Custom-IPcam-Models/raw/main/RKNN_Mode
 opencv-python               # Installing OpenCV, the Computer Vision library for Python
 numpy                       # Installing NumPy, a package for scientific computing
 
+CodeProject-AI-SDK          # Installing the CodeProject.AI SDK
+
 # end of file
