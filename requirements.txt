@@ -4,7 +4,7 @@
 https://github.com/MikeLud/CodeProject.AI-Custom-IPcam-Models/raw/main/RKNN_Models/fastdeploy_python-1.4.2b0-cp39-cp39-linux_aarch64.whl
 
 opencv-python               # Installing OpenCV, the Computer Vision library for Python
-numpy                       # Installing NumPy, a package for scientific computing
+numpy<2.0                   # Installing NumPy, a package for scientific computing
 
 CodeProject-AI-SDK          # Installing the CodeProject.AI SDK
 
