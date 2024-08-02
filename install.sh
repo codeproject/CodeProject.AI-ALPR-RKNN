@@ -14,14 +14,14 @@ if [ "$1" != "install" ]; then
     exit 1 
 fi
 
-module_install_errors=""
+moduleInstallErrors=""
 
 if [ "${edgeDevice}" != "Orange Pi" ] && [ "${edgeDevice}" != "Radxa ROCK" ] ; then
-    module_install_errors="Unable to install on non-Orange Pi or Radxa ROCK hardware."
+    moduleInstallErrors="Unable to install on non-Orange Pi or Radxa ROCK hardware."
 else
     # Download the OCR models and store in /paddleocr
     getFromServer "models/" "paddleocr-rknn-models.zip" "paddleocr" "Downloading Plate and OCR models..."
 
     # TODO: Check paddleocr created and has files, maybe run paddle check too
-    # module_install_errors=...
+    # moduleInstallErrors=...
 fi
